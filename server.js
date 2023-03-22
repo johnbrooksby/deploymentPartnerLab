@@ -6,7 +6,7 @@ const cors = require('cors')
 app.use(express.json());
 app.use(cors());
 
-
+console.log(`${__dirname}/client`)
 app.use(express.static(`${__dirname}/client`))
 
 // app.get('/', (req, res) => {
