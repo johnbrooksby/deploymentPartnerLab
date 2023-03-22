@@ -8,15 +8,15 @@ app.use(cors());
 
 
 app.get('/', (req, res) => {
-    res.sendFile(__dirname + '/public/index.html')
+    res.sendFile(__dirname + '/lab.html')
 })
 
 app.get('/css', (req, res) => {
-    res.sendFile(__dirname + "/public/styles.css")
+    res.sendFile(__dirname + "/lab.css")
 })
 
 app.get('/js', (req, res) => {
-    res.sendFile(__dirname + "/public/main.js")
+    res.sendFile(__dirname + "/lab.js")
 })
 
 app.listen(4000, () => {
