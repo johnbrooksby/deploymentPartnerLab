@@ -1,8 +1,7 @@
-require('dotenv').config()
+
 const express = require('express')
 const app = express()
 const cors = require('cors')
-const {PORT} = process.env
 
 app.use(express.json());
 app.use(cors());
@@ -20,6 +19,6 @@ app.get('/js', (req, res) => {
     res.sendFile(__dirname + "/public/main.js")
 })
 
-app.listen(PORT, () => {
-    console.log(`app listening on ${PORT}`)
+app.listen(4000, () => {
+    console.log(`app listening on port 4000`)
 });
