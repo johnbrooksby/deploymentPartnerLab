@@ -1,8 +1,8 @@
 let button = document.querySelector("button")
-let input = document.querySelector("input").value
+let input = document.querySelector("input")
 
 button.addEventListener("click", saveInput)
 
 function saveInput(){
-    alert(input)
+    alert(`I would like ${input.value}`)
 }
