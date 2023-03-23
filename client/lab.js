@@ -5,4 +5,5 @@ button.addEventListener("click", saveInput)
 
 function saveInput(){
     alert(`I would like ${input.value}`)
+    input.textContent = ""
 }
